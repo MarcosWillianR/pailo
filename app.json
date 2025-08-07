@@ -9,7 +9,8 @@
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.apidatasync.pailo"
     },
     "android": {
       "adaptiveIcon": {
@@ -32,6 +33,18 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/HindSiliguri-Bold.ttf",
+            "./assets/fonts/HindSiliguri-Light.ttf",
+            "./assets/fonts/HindSiliguri-Medium.ttf",
+            "./assets/fonts/HindSiliguri-Regular.ttf",
+            "./assets/fonts/HindSiliguri-SemiBold.ttf"
+          ]
         }
       ]
     ],
