@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0CF0067D73504131B0A093AF /* HindSiliguri-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 201AD0C0224E4D35A12E681E /* HindSiliguri-Medium.ttf */; };
+		09549A57ECE8757EFBF41384 /* libPods-pailo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABA0411F0497EB5EA04AD0EA /* libPods-pailo.a */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
+		1A5C1A03A18C473DB4212F91 /* HindSiliguri-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DE4B3E1E2FD4DF492899C68 /* HindSiliguri-SemiBold.ttf */; };
+		1F130B0DB4E5465687FAC72B /* HindSiliguri-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F1DB4ACFE76D43AA944588CE /* HindSiliguri-Medium.ttf */; };
 		3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */; };
-		5432270AE76FE008169A8D39 /* libPods-pailo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EAAF848904966A8058D2F /* libPods-pailo.a */; };
-		6AC5A954835740CF8A3854B9 /* HindSiliguri-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 49E261F2BA32425784D55BB8 /* HindSiliguri-Regular.ttf */; };
-		94EBAB26A9754AFF9636ED18 /* HindSiliguri-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D6896379FBBC4F759E917889 /* HindSiliguri-Bold.ttf */; };
-		985C0E800BEF923D57F363A6 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 14627CB70474E56B264C518F /* PrivacyInfo.xcprivacy */; };
-		B54629F62B7341669F96FAA6 /* HindSiliguri-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 48D41C41E7DB444FA1982C8D /* HindSiliguri-SemiBold.ttf */; };
-		B938FB5FCBA5AA77930F313E /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADA1AB5DA31FCDA6D53E301 /* ExpoModulesProvider.swift */; };
+		531B532EC0284E9BA8D318A7 /* HindSiliguri-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E061C2039CBC47E7BAF16C66 /* HindSiliguri-Regular.ttf */; };
+		76E9C9CB626F44308830F3C3 /* HindSiliguri-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CF46BB7053CA4044A366FD84 /* HindSiliguri-Bold.ttf */; };
+		A2FC6FEC08E647AA8FED3EDE /* HindSiliguri-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D439C69A47F144DAB2E352B0 /* HindSiliguri-Light.ttf */; };
 		BB2F792D24A3F905000567C9 /* Expo.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB2F792C24A3F905000567C9 /* Expo.plist */; };
-		DA16536A2DD94D1CA7930ABC /* HindSiliguri-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE534C028F4248E989ED4CFE /* HindSiliguri-Light.ttf */; };
+		DAB8F3C1D5A9312917BAD089 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DB708E387C0BD2C3467509C2 /* PrivacyInfo.xcprivacy */; };
+		ED7DE81E0AF419D0D98EA638 /* ExpoModulesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6202F72397B689BB00935F /* ExpoModulesProvider.swift */; };
 		F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11748412D0307B40044C1D9 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,21 +25,21 @@
 		13B07F961A680F5B00A75B9A /* pailo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pailo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = pailo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = pailo/Info.plist; sourceTree = "<group>"; };
-		14627CB70474E56B264C518F /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = pailo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		201AD0C0224E4D35A12E681E /* HindSiliguri-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Medium.ttf"; path = "../assets/fonts/HindSiliguri-Medium.ttf"; sourceTree = "<group>"; };
-		48D41C41E7DB444FA1982C8D /* HindSiliguri-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-SemiBold.ttf"; path = "../assets/fonts/HindSiliguri-SemiBold.ttf"; sourceTree = "<group>"; };
-		49E261F2BA32425784D55BB8 /* HindSiliguri-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Regular.ttf"; path = "../assets/fonts/HindSiliguri-Regular.ttf"; sourceTree = "<group>"; };
-		A1C720A42D82D38CF867FBE2 /* Pods-pailo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pailo.release.xcconfig"; path = "Target Support Files/Pods-pailo/Pods-pailo.release.xcconfig"; sourceTree = "<group>"; };
+		1F8BF30B44CEEEF7BF65B17D /* Pods-pailo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pailo.release.xcconfig"; path = "Target Support Files/Pods-pailo/Pods-pailo.release.xcconfig"; sourceTree = "<group>"; };
+		2E6202F72397B689BB00935F /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-pailo/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		3DE4B3E1E2FD4DF492899C68 /* HindSiliguri-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-SemiBold.ttf"; path = "../assets/fonts/HindSiliguri-SemiBold.ttf"; sourceTree = "<group>"; };
+		52FF7EF16484602F9F102FC7 /* Pods-pailo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pailo.debug.xcconfig"; path = "Target Support Files/Pods-pailo/Pods-pailo.debug.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = pailo/SplashScreen.storyboard; sourceTree = "<group>"; };
+		ABA0411F0497EB5EA04AD0EA /* libPods-pailo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pailo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		BE534C028F4248E989ED4CFE /* HindSiliguri-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Light.ttf"; path = "../assets/fonts/HindSiliguri-Light.ttf"; sourceTree = "<group>"; };
-		C60EAAF848904966A8058D2F /* libPods-pailo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pailo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6896379FBBC4F759E917889 /* HindSiliguri-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Bold.ttf"; path = "../assets/fonts/HindSiliguri-Bold.ttf"; sourceTree = "<group>"; };
+		CF46BB7053CA4044A366FD84 /* HindSiliguri-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Bold.ttf"; path = "../assets/fonts/HindSiliguri-Bold.ttf"; sourceTree = "<group>"; };
+		D439C69A47F144DAB2E352B0 /* HindSiliguri-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Light.ttf"; path = "../assets/fonts/HindSiliguri-Light.ttf"; sourceTree = "<group>"; };
+		DB708E387C0BD2C3467509C2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = pailo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		E061C2039CBC47E7BAF16C66 /* HindSiliguri-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Regular.ttf"; path = "../assets/fonts/HindSiliguri-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = pailo/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* pailo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pailo-Bridging-Header.h"; path = "pailo/pailo-Bridging-Header.h"; sourceTree = "<group>"; };
-		F99513FD8D7682369E393B4B /* Pods-pailo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pailo.debug.xcconfig"; path = "Target Support Files/Pods-pailo/Pods-pailo.debug.xcconfig"; sourceTree = "<group>"; };
-		FADA1AB5DA31FCDA6D53E301 /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-pailo/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
+		F1DB4ACFE76D43AA944588CE /* HindSiliguri-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Medium.ttf"; path = "../assets/fonts/HindSiliguri-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5432270AE76FE008169A8D39 /* libPods-pailo.a in Frameworks */,
+				09549A57ECE8757EFBF41384 /* libPods-pailo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,36 +63,39 @@
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */,
-				14627CB70474E56B264C518F /* PrivacyInfo.xcprivacy */,
+				DB708E387C0BD2C3467509C2 /* PrivacyInfo.xcprivacy */,
 			);
 			name = pailo;
-			sourceTree = "<group>";
-		};
-		1CF5EBE1DE3CD46B991965C8 /* ExpoModulesProviders */ = {
-			isa = PBXGroup;
-			children = (
-				EEF8E5B34C6AE4416C8F2019 /* pailo */,
-			);
-			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				C60EAAF848904966A8058D2F /* libPods-pailo.a */,
+				ABA0411F0497EB5EA04AD0EA /* libPods-pailo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3324B4AD690EA6D0AA5F8464 /* Pods */ = {
+		37F5E809212B4DFCBE2BDA08 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F99513FD8D7682369E393B4B /* Pods-pailo.debug.xcconfig */,
-				A1C720A42D82D38CF867FBE2 /* Pods-pailo.release.xcconfig */,
+				CF46BB7053CA4044A366FD84 /* HindSiliguri-Bold.ttf */,
+				D439C69A47F144DAB2E352B0 /* HindSiliguri-Light.ttf */,
+				F1DB4ACFE76D43AA944588CE /* HindSiliguri-Medium.ttf */,
+				E061C2039CBC47E7BAF16C66 /* HindSiliguri-Regular.ttf */,
+				3DE4B3E1E2FD4DF492899C68 /* HindSiliguri-SemiBold.ttf */,
 			);
-			name = Pods;
-			path = Pods;
+			name = Resources;
+			path = "";
+			sourceTree = "<group>";
+		};
+		6F8D81D013497E5741E2A840 /* pailo */ = {
+			isa = PBXGroup;
+			children = (
+				2E6202F72397B689BB00935F /* ExpoModulesProvider.swift */,
+			);
+			name = pailo;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -109,9 +112,9 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				DF312F22CF7A49CABCCD3737 /* Resources */,
-				3324B4AD690EA6D0AA5F8464 /* Pods */,
-				1CF5EBE1DE3CD46B991965C8 /* ExpoModulesProviders */,
+				37F5E809212B4DFCBE2BDA08 /* Resources */,
+				9B6CE0B538913BF41B4280FD /* Pods */,
+				D4CFB36ECFA6626FBF610029 /* ExpoModulesProviders */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -126,6 +129,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		9B6CE0B538913BF41B4280FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52FF7EF16484602F9F102FC7 /* Pods-pailo.debug.xcconfig */,
+				1F8BF30B44CEEEF7BF65B17D /* Pods-pailo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BB2F792B24A3F905000567C9 /* Supporting */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,25 +148,12 @@
 			path = pailo/Supporting;
 			sourceTree = "<group>";
 		};
-		DF312F22CF7A49CABCCD3737 /* Resources */ = {
+		D4CFB36ECFA6626FBF610029 /* ExpoModulesProviders */ = {
 			isa = PBXGroup;
 			children = (
-				D6896379FBBC4F759E917889 /* HindSiliguri-Bold.ttf */,
-				BE534C028F4248E989ED4CFE /* HindSiliguri-Light.ttf */,
-				201AD0C0224E4D35A12E681E /* HindSiliguri-Medium.ttf */,
-				49E261F2BA32425784D55BB8 /* HindSiliguri-Regular.ttf */,
-				48D41C41E7DB444FA1982C8D /* HindSiliguri-SemiBold.ttf */,
+				6F8D81D013497E5741E2A840 /* pailo */,
 			);
-			name = Resources;
-			path = "";
-			sourceTree = "<group>";
-		};
-		EEF8E5B34C6AE4416C8F2019 /* pailo */ = {
-			isa = PBXGroup;
-			children = (
-				FADA1AB5DA31FCDA6D53E301 /* ExpoModulesProvider.swift */,
-			);
-			name = pailo;
+			name = ExpoModulesProviders;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,13 +164,13 @@
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "pailo" */;
 			buildPhases = (
 				08A4A3CD28434E44B6B9DE2E /* [CP] Check Pods Manifest.lock */,
-				617A7101BC2A52E88F20483F /* [Expo] Configure project */,
+				B52E2159B5F55FE5E2A02344 /* [Expo] Configure project */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */,
-				095B1823B9B74BF02EF8612B /* [CP] Embed Pods Frameworks */,
+				1245D876A0ED021A4E90D08F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -220,12 +220,12 @@
 				BB2F792D24A3F905000567C9 /* Expo.plist in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				3E461D99554A48A4959DE609 /* SplashScreen.storyboard in Resources */,
-				94EBAB26A9754AFF9636ED18 /* HindSiliguri-Bold.ttf in Resources */,
-				DA16536A2DD94D1CA7930ABC /* HindSiliguri-Light.ttf in Resources */,
-				0CF0067D73504131B0A093AF /* HindSiliguri-Medium.ttf in Resources */,
-				6AC5A954835740CF8A3854B9 /* HindSiliguri-Regular.ttf in Resources */,
-				B54629F62B7341669F96FAA6 /* HindSiliguri-SemiBold.ttf in Resources */,
-				985C0E800BEF923D57F363A6 /* PrivacyInfo.xcprivacy in Resources */,
+				76E9C9CB626F44308830F3C3 /* HindSiliguri-Bold.ttf in Resources */,
+				A2FC6FEC08E647AA8FED3EDE /* HindSiliguri-Light.ttf in Resources */,
+				1F130B0DB4E5465687FAC72B /* HindSiliguri-Medium.ttf in Resources */,
+				531B532EC0284E9BA8D318A7 /* HindSiliguri-Regular.ttf in Resources */,
+				1A5C1A03A18C473DB4212F91 /* HindSiliguri-SemiBold.ttf in Resources */,
+				DAB8F3C1D5A9312917BAD089 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,7 +269,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		095B1823B9B74BF02EF8612B /* [CP] Embed Pods Frameworks */ = {
+		1245D876A0ED021A4E90D08F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -286,25 +286,6 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pailo/Pods-pailo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
-		};
-		617A7101BC2A52E88F20483F /* [Expo] Configure project */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "[Expo] Configure project";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-pailo/expo-configure-project.sh\"\n";
 		};
 		800E24972A6A228C8D4807E9 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -342,6 +323,25 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pailo/Pods-pailo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B52E2159B5F55FE5E2A02344 /* [Expo] Configure project */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "[Expo] Configure project";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This script configures Expo modules and generates the modules provider file.\nbash -l -c \"./Pods/Target\\ Support\\ Files/Pods-pailo/expo-configure-project.sh\"\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -350,7 +350,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F11748422D0307B40044C1D9 /* AppDelegate.swift in Sources */,
-				B938FB5FCBA5AA77930F313E /* ExpoModulesProvider.swift in Sources */,
+				ED7DE81E0AF419D0D98EA638 /* ExpoModulesProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,7 +359,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F99513FD8D7682369E393B4B /* Pods-pailo.debug.xcconfig */;
+			baseConfigurationReference = 52FF7EF16484602F9F102FC7 /* Pods-pailo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -395,7 +395,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1C720A42D82D38CF867FBE2 /* Pods-pailo.release.xcconfig */;
+			baseConfigurationReference = 1F8BF30B44CEEEF7BF65B17D /* Pods-pailo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
