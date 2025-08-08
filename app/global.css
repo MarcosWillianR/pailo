@@ -1,3 +1,29 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .flex-center {
+    @apply flex items-center justify-center;
+  }
+
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .flex-start {
+    @apply flex items-start justify-center;
+  }
+}
+
+@layer components {
+  .title {
+    @apply text-4xl font-h-bold;
+  }
+  .paragraph {
+    @apply text-base font-h-regular;
+  }
+  .paragraph-semibold {
+    @apply text-base font-h-semibold;
+  }
+}
