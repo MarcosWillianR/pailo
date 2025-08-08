@@ -18,12 +18,12 @@
 
 @layer components {
   .title {
-    @apply text-4xl font-h-bold;
+    @apply text-4xl font-h-bold leading-tight;
   }
   .paragraph {
-    @apply text-base font-h-regular;
+    @apply text-lg font-h-regular;
   }
   .paragraph-semibold {
-    @apply text-base font-h-semibold;
+    @apply text-lg font-h-semibold;
   }
 }

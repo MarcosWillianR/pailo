@@ -13,6 +13,7 @@ module.exports = {
         "h-semibold": "HindSiliguri-SemiBold",
       },
       colors: {
+        screen: "#F4F5FA",
         "primary-100": "#6B7CE1",
         "primary-200": "#273DBF",
         "primary-400": "#1E3094",

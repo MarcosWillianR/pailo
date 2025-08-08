@@ -27,19 +27,19 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = pailo/Info.plist; sourceTree = "<group>"; };
 		1F8BF30B44CEEEF7BF65B17D /* Pods-pailo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pailo.release.xcconfig"; path = "Target Support Files/Pods-pailo/Pods-pailo.release.xcconfig"; sourceTree = "<group>"; };
 		2E6202F72397B689BB00935F /* ExpoModulesProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExpoModulesProvider.swift; path = "Pods/Target Support Files/Pods-pailo/ExpoModulesProvider.swift"; sourceTree = "<group>"; };
-		3DE4B3E1E2FD4DF492899C68 /* HindSiliguri-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-SemiBold.ttf"; path = "../assets/fonts/HindSiliguri-SemiBold.ttf"; sourceTree = "<group>"; };
+		3DE4B3E1E2FD4DF492899C68 /* HindSiliguri-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-SemiBold.ttf"; path = "../assets/fonts/HindSiliguri-SemiBold.ttf"; sourceTree = "<group>"; };
 		52FF7EF16484602F9F102FC7 /* Pods-pailo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pailo.debug.xcconfig"; path = "Target Support Files/Pods-pailo/Pods-pailo.debug.xcconfig"; sourceTree = "<group>"; };
 		AA286B85B6C04FC6940260E9 /* SplashScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = SplashScreen.storyboard; path = pailo/SplashScreen.storyboard; sourceTree = "<group>"; };
 		ABA0411F0497EB5EA04AD0EA /* libPods-pailo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-pailo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB2F792C24A3F905000567C9 /* Expo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expo.plist; sourceTree = "<group>"; };
-		CF46BB7053CA4044A366FD84 /* HindSiliguri-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Bold.ttf"; path = "../assets/fonts/HindSiliguri-Bold.ttf"; sourceTree = "<group>"; };
-		D439C69A47F144DAB2E352B0 /* HindSiliguri-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Light.ttf"; path = "../assets/fonts/HindSiliguri-Light.ttf"; sourceTree = "<group>"; };
-		DB708E387C0BD2C3467509C2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = pailo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
-		E061C2039CBC47E7BAF16C66 /* HindSiliguri-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Regular.ttf"; path = "../assets/fonts/HindSiliguri-Regular.ttf"; sourceTree = "<group>"; };
+		CF46BB7053CA4044A366FD84 /* HindSiliguri-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Bold.ttf"; path = "../assets/fonts/HindSiliguri-Bold.ttf"; sourceTree = "<group>"; };
+		D439C69A47F144DAB2E352B0 /* HindSiliguri-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Light.ttf"; path = "../assets/fonts/HindSiliguri-Light.ttf"; sourceTree = "<group>"; };
+		DB708E387C0BD2C3467509C2 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = pailo/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		E061C2039CBC47E7BAF16C66 /* HindSiliguri-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Regular.ttf"; path = "../assets/fonts/HindSiliguri-Regular.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F11748412D0307B40044C1D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = pailo/AppDelegate.swift; sourceTree = "<group>"; };
 		F11748442D0722820044C1D9 /* pailo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "pailo-Bridging-Header.h"; path = "pailo/pailo-Bridging-Header.h"; sourceTree = "<group>"; };
-		F1DB4ACFE76D43AA944588CE /* HindSiliguri-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Medium.ttf"; path = "../assets/fonts/HindSiliguri-Medium.ttf"; sourceTree = "<group>"; };
+		F1DB4ACFE76D43AA944588CE /* HindSiliguri-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "HindSiliguri-Medium.ttf"; path = "../assets/fonts/HindSiliguri-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,7 +87,6 @@
 				3DE4B3E1E2FD4DF492899C68 /* HindSiliguri-SemiBold.ttf */,
 			);
 			name = Resources;
-			path = "";
 			sourceTree = "<group>";
 		};
 		6F8D81D013497E5741E2A840 /* pailo */ = {
@@ -135,7 +134,6 @@
 				52FF7EF16484602F9F102FC7 /* Pods-pailo.debug.xcconfig */,
 				1F8BF30B44CEEEF7BF65B17D /* Pods-pailo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -365,6 +363,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = pailo/pailo.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F664GWC7GM;
 				ENABLE_BITCODE = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
@@ -401,6 +400,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = pailo/pailo.entitlements;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = F664GWC7GM;
 				INFOPLIST_FILE = pailo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -6,9 +6,10 @@ interface ButtonProps extends PressableProps {
   type?: "primary" | "secondary";
 }
 
-export function Button({ children, type = "primary" }: ButtonProps) {
+export function Button({ children, type = "primary", ...rest }: ButtonProps) {
   return (
     <Pressable
+      {...rest}
       className={cn(
         "h-14 w-full rounded-xl items-center justify-center",
         type === "primary"
