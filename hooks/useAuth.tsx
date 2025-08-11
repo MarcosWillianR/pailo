@@ -1,5 +1,5 @@
-import { router } from "expo-router";
-import { createContext, PropsWithChildren, useContext, useState } from "react";
+import { router } from 'expo-router';
+import { createContext, PropsWithChildren, useContext, useState } from 'react';
 
 interface AuthContextProps {
   isAuthenticated: boolean;
@@ -13,21 +13,17 @@ function AuthProvider({ children }: PropsWithChildren) {
 
   const handleSignIn = () => {
     setIsAuthenticated(true);
-    router.push("./");
+    router.push('/');
   };
 
-  return (
-    <AuthContext.Provider value={{ isAuthenticated, signIn: handleSignIn }}>
-      {children}
-    </AuthContext.Provider>
-  );
+  return <AuthContext.Provider value={{ isAuthenticated, signIn: handleSignIn }}>{children}</AuthContext.Provider>;
 }
 
 function useAuth() {
   const context = useContext(AuthContext);
 
   if (!context) {
-    throw new Error("useAuth must be inside a AuthContext provider.");
+    throw new Error('useAuth must be inside a AuthContext provider.');
   }
 
   return context;

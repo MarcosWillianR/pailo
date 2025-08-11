@@ -26,4 +26,7 @@
   .paragraph-semibold {
     @apply text-lg font-h-semibold;
   }
+  .tabname {
+    @apply text-xl font-h-semibold;
+  }
 }
