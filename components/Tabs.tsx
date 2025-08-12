@@ -14,6 +14,7 @@ export function Tabs({ onSelect, tabs, selectedTab }: TabsProps) {
         const isSelected = selectedTab === tabName;
         return (
           <TouchableOpacity
+            activeOpacity={0.8}
             className={cn(
               'flex-1 h-14 bg-neutral-0 rounded-2xl items-center justify-center',
               isSelected ? 'bg-neutral-0' : 'bg-neutral-100',

@@ -5,11 +5,11 @@ export type DataType = {
 };
 
 export const data: DataType[] = [
-  { label: 'Mon', date: 'Monday', value: 12987 },
-  { label: 'Tue', date: 'Tuesday', value: 14321 },
-  { label: 'Wed', date: 'Wednesday', value: 13456 },
-  { label: 'Thu', date: 'Thursday', value: 11876 },
-  { label: 'Fri', date: 'Friday', value: 13789 },
-  { label: 'Sat', date: 'Saturday', value: 12987 },
-  { label: 'Sun', date: 'Sunday', value: 13234 },
+  { label: 'JAN', date: 'Janeiro', value: 12987 },
+  { label: 'FEV', date: 'Fevereiro', value: 14321 },
+  { label: 'MAR', date: 'Março', value: 13456 },
+  { label: 'ABR', date: 'Abril', value: 11876 },
+  { label: 'MAI', date: 'Maio', value: 13789 },
+  { label: 'JUN', date: 'Junho', value: 12987 },
+  { label: 'JUL', date: 'Julho', value: 13234 },
 ];
