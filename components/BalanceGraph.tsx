@@ -8,6 +8,7 @@ import { getYForX, parse } from 'react-native-redash';
 import { DataType } from '@/data/data';
 
 import { Cursor } from './Cursor';
+import { DottedLine } from './DottedLine';
 import { Gradient } from './Gradient';
 import { XAxisText } from './XAxisText';
 
@@ -28,19 +29,11 @@ export function BalanceGraph({
   setSelectedDate,
   selectedValue,
 }: BalanceGrapProps) {
-  const [showCursor, setShowCursor] = useState(false);
+  const [current, setCurrent] = useState(1);
   const animationLine = useSharedValue(0);
   const animationGradient = useSharedValue({ x: 0, y: 0 });
   const cx = useSharedValue(0);
   const cy = useSharedValue(0);
-  const totalValue = data.reduce((acc, item) => acc + item.value, 0);
-
-  useEffect(() => {
-    animationLine.value = withTiming(1, { duration: 1000 });
-    animationGradient.value = withDelay(1000, withTiming({ x: 0, y: chartHeight }, { duration: 500 }));
-    selectedValue.value = withTiming(totalValue, { duration: 1000 });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   const xDomain = data.map((dataPoint: DataType) => dataPoint.label);
 
@@ -68,11 +61,27 @@ export function BalanceGraph({
 
   const path = parse(linePath!.toSVGString());
 
+  useEffect(() => {
+    animationLine.value = withTiming(1, { duration: 1000 });
+    animationGradient.value = withDelay(1000, withTiming({ x: 0, y: chartHeight }, { duration: 500 }));
+    selectedValue.value = withTiming(data[0].value, { duration: 1000 });
+
+    // Posição inicial no primeiro item
+    const firstX = x(data[1].label)!;
+
+    cx.value = firstX;
+    cy.value = getYForX(path, firstX)!;
+
+    selectedValue.value = withTiming(data[0].value, { duration: 1000 });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const handleGestureEvent = (e: PanGestureHandlerEventPayload) => {
     'worklet';
 
     const index = Math.floor(e.absoluteX / stepX);
 
+    runOnJS(setCurrent)(index);
     runOnJS(setSelectedDate)(data[index].date);
     selectedValue.value = withTiming(data[index].value);
 
@@ -85,17 +94,7 @@ export function BalanceGraph({
     cy.value = getYForX(path, Math.floor(clampValue))!;
   };
 
-  const pan = Gesture.Pan()
-    .onTouchesDown(() => {
-      runOnJS(setShowCursor)(true);
-    })
-    .onTouchesUp(() => {
-      runOnJS(setShowCursor)(false);
-      runOnJS(setSelectedDate)('Total');
-      selectedValue.value = withTiming(totalValue);
-    })
-    .onBegin(handleGestureEvent)
-    .onChange(handleGestureEvent);
+  const pan = Gesture.Pan().onBegin(handleGestureEvent).onChange(handleGestureEvent);
 
   return (
     <GestureDetector gesture={pan}>
@@ -122,8 +121,21 @@ export function BalanceGraph({
           <XAxisText x={x(dataPoint.label)!} y={chartHeight} text={dataPoint.label} key={index} />
         ))}
 
-        {/* {showCursor && <Cursor cx={cx} cy={cy} chartHeight={chartHeight} />} */}
         <Cursor cx={cx} cy={cy} chartHeight={chartHeight} />
+
+        {data.map((i, idx) => {
+          const iX = x(i.label)!;
+
+          return (
+            <DottedLine
+              key={i.label}
+              cx={iX}
+              cy={getYForX(path, iX)!}
+              chartHeight={chartHeight}
+              current={current === idx}
+            />
+          );
+        })}
       </Canvas>
     </GestureDetector>
   );
