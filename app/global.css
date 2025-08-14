@@ -29,4 +29,7 @@
   .tabname {
     @apply text-xl font-h-semibold;
   }
+  .card {
+    @apply mx-6 mt-6 p-3 bg-neutral-0 rounded-2xl;
+  }
 }

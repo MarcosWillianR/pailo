@@ -102,7 +102,7 @@ export function BalanceGraph({
         <Path
           path={linePath!}
           style="stroke"
-          strokeWidth={4}
+          strokeWidth={3}
           color="#30B5C5"
           strokeCap="round"
           start={0}

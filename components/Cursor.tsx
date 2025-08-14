@@ -9,15 +9,12 @@ interface CursorProps {
 }
 
 export function Cursor({ cx, cy, chartHeight }: CursorProps) {
-  // linha pontilhada (path relativo, depois traduzido)
   const dotted = useDerivedValue(() => {
     const p = Skia.Path.Make();
     p.moveTo(0, 0);
-    // desce até o fundo do gráfico (ajuste -20 se quiser espaçamento do bottom)
     p.lineTo(0, chartHeight - 20 - cy.value);
     p.dash(10, 12, 0);
 
-    // traduz para a posição real do cursor
     const m = Skia.Matrix();
     m.translate(cx.value, cy.value);
     p.transform(m);
@@ -25,7 +22,6 @@ export function Cursor({ cx, cy, chartHeight }: CursorProps) {
     return p;
   });
 
-  // background rounded rect com shader linear (top semicircle look)
   const bg = useDerivedValue(() => {
     const w = 70;
     const h = chartHeight; // altura do gradiente a partir do cursor até o fundo
