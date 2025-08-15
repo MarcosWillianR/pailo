@@ -36,7 +36,7 @@ export default function TabsLayout() {
           tabBarShowLabel: false,
           tabBarIcon: ({ size, color }) => (
             <View className="bg-secondary-600 relative -top-5 rounded-2xl w-16 h-16 items-center justify-center">
-              <Feather name="plus" size={size} color="white" />
+              <Feather name="plus" size={size} color="#111B54" />
             </View>
           ),
         }}
