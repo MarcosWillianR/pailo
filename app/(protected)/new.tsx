@@ -43,9 +43,12 @@ export default function New() {
   const [type, setType] = useState<Type>('income');
 
   const [date, setDate] = useState('');
+  const [name, setName] = useState('');
   const [value, setValue] = useState('');
   const [description, setDescription] = useState('');
   const [recurrency, setRecurrency] = useState<Recurrency>('single');
+  const [startDate, setStartDate] = useState('');
+  const [endDate, setEndDate] = useState('');
   const [selectedCategoryId, setSelectedCategoryId] = useState<number | null>(null);
 
   const saveTransaction = async () => {
@@ -71,24 +74,38 @@ export default function New() {
         </View>
 
         <Input
-          label="Valor"
-          suffix={<Feather name="dollar-sign" size={22} color="#9AA6BC" />}
-          value={value}
-          onChangeText={(v) => setValue(normalizeCurrency(v))}
-          keyboardType="numeric"
+          label="Nome"
+          placeholder="Salário, Mercado, Remédio febre..."
+          iconName="cursor-text"
+          value={description}
+          onChangeText={(v) => setDescription(v)}
         />
 
-        <Input
-          label="Data"
-          suffix={<Feather name="calendar" size={22} color="#9AA6BC" />}
-          value={date}
-          onChangeText={(v) => setDate(normalizeDate(v))}
-          keyboardType="numeric"
-        />
+        <View className="flex-row gap-4">
+          <Input
+            inputContainerClassName="flex-1"
+            label="Valor"
+            iconName="currency-usd"
+            value={value}
+            onChangeText={(v) => setValue(normalizeCurrency(v))}
+            keyboardType="numeric"
+          />
+
+          <Input
+            inputContainerClassName="flex-1"
+            label="Data"
+            placeholder="dd/mm/aaaa"
+            iconName="calendar"
+            value={date}
+            onChangeText={(v) => setDate(normalizeDate(v))}
+            keyboardType="numeric"
+          />
+        </View>
 
         <Input
           label="Descrição"
-          suffix={<Feather name="type" size={22} color="#9AA6BC" />}
+          placeholder="Compra de frutas no mercado..."
+          iconName="cursor-text"
           value={description}
           onChangeText={(v) => setDescription(v)}
         />
@@ -98,10 +115,33 @@ export default function New() {
           radios={[
             { label: 'Única vez', value: 'single' },
             { label: 'Mensal', value: 'monthly' },
+            { label: 'Anual', value: 'yearly' },
           ]}
           onPress={(v: Recurrency) => setRecurrency(v)}
           selected={recurrency}
         />
+
+        {recurrency !== 'single' && (
+          <View className="flex-row gap-4">
+            <Input
+              inputContainerClassName="flex-1"
+              label="Data de inicio"
+              iconName="calendar"
+              value={startDate}
+              onChangeText={(v) => setStartDate(normalizeDate(v))}
+              keyboardType="numeric"
+            />
+
+            <Input
+              inputContainerClassName="flex-1"
+              label="Data de fim"
+              iconName="calendar"
+              value={endDate}
+              onChangeText={(v) => setEndDate(normalizeDate(v))}
+              keyboardType="numeric"
+            />
+          </View>
+        )}
 
         <Categories
           showLabel

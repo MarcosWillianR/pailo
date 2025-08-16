@@ -52,7 +52,7 @@ export function Categories({ selectedType, showLabel, selectedCategoryId, onSele
               key={category.id}
               className={cn(
                 'flex-row items-center overflow-hidden rounded-2xl border-[1px] h-14 px-4',
-                isSelected ? 'bg-primary-600 border-primary-800' : 'bg-neutral-0 border-neutral-200',
+                isSelected ? 'bg-secondary-600 border-secondary-600' : 'bg-neutral-0 border-neutral-200',
               )}
             >
               <MaterialCommunityIcons

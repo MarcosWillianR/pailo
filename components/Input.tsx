@@ -1,3 +1,4 @@
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import cn from 'clsx';
 import { useState } from 'react';
 import { TextInput, TextInputProps, View } from 'react-native';
@@ -5,14 +6,15 @@ import { FormLabel } from './FormLabel';
 
 interface InputProps extends TextInputProps {
   label: string;
-  suffix?: React.ReactNode;
+  iconName: React.ComponentProps<typeof MaterialCommunityIcons>['name'];
+  inputContainerClassName?: string;
 }
 
-export function Input({ label, suffix, ...rest }: InputProps) {
+export function Input({ label, iconName, inputContainerClassName, ...rest }: InputProps) {
   const [isFocused, setIsFocused] = useState(false);
 
   return (
-    <View>
+    <View className={inputContainerClassName}>
       <FormLabel>{label}</FormLabel>
       <View className={cn('rounded-2xl p-1', isFocused ? 'bg-secondary-600/30' : 'bg-transparent')}>
         <View
@@ -21,15 +23,15 @@ export function Input({ label, suffix, ...rest }: InputProps) {
             isFocused ? 'border-secondary-600' : 'border-neutral-200',
           )}
         >
-          {suffix && suffix}
+          {iconName && <MaterialCommunityIcons name={iconName} size={20} color={isFocused ? '#65D4E1' : '#9AA6BC'} />}
 
           <TextInput
-            className={cn('h-14 flex-1 color-primary-600 paragraph', suffix ? 'ml-3' : '')}
             placeholder={label}
+            {...rest}
+            className={cn('h-14 flex-1 color-primary-600 paragraph', iconName ? 'ml-3' : '')}
             placeholderTextColor="#9AA6BC"
             onFocus={() => setIsFocused(true)}
             onBlur={() => setIsFocused(false)}
-            {...rest}
           />
         </View>
       </View>

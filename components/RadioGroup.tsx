@@ -30,7 +30,7 @@ export function RadioGroup<T>({ selected, onPress, radios, label }: RadioGroupPr
             <View
               className={cn(
                 'w-7 h-7 bg-neutral-0 rounded-full',
-                selected === value ? 'border-primary-600 border-[7px]' : 'border-[2px] border-neutral-200',
+                selected === value ? 'border-secondary-600 border-[7px]' : 'border-[2px] border-neutral-200',
               )}
             />
             <Text className="paragraph">{label}</Text>

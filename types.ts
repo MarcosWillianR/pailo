@@ -1,4 +1,4 @@
 type Type = 'income' | 'outcome';
-type Recurrency = 'single' | 'monthly';
+type Recurrency = 'single' | 'monthly' | 'yearly';
 
 export { Recurrency, Type };
