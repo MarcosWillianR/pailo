@@ -1,4 +1,4 @@
-import { Feather } from '@expo/vector-icons';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { useFont } from '@shopify/react-native-skia';
 import { useState } from 'react';
 import { ScrollView, Text, useWindowDimensions, View } from 'react-native';
@@ -9,6 +9,7 @@ import { data } from '@/data/data';
 
 import { AnimatedText } from '@/components/AnimatedText';
 import { BalanceGraph } from '@/components/BalanceGraph';
+import { Button } from '@/components/Button';
 import { Summary } from '@/components/Summary';
 import { Tabs } from '@/components/Tabs';
 
@@ -51,12 +52,12 @@ export default function HomeScreen() {
 
           <View className="flex-row items-center">
             <View className="p-3 border-[1px] border-neutral-200 rounded-2xl mr-3">
-              <Feather name="shopping-cart" size={24} />
+              <MaterialCommunityIcons name="cash-multiple" size={24} />
             </View>
 
             <View className="mr-auto">
               <Text className="paragraph-semibold">Salário</Text>
-              <Text className="paragraph">Work</Text>
+              <Text className="paragraph">Salário</Text>
             </View>
 
             <Text className="paragraph-semibold text-green-600">+R$ 8.755,00</Text>
@@ -69,12 +70,12 @@ export default function HomeScreen() {
           <View className="gap-3">
             <View className="flex-row items-center">
               <View className="p-3 border-[1px] border-neutral-200 rounded-2xl mr-3">
-                <Feather name="shopping-cart" size={24} />
+                <MaterialCommunityIcons name="food" size={24} />
               </View>
 
               <View className="mr-auto">
                 <Text className="paragraph-semibold">Mercado</Text>
-                <Text className="paragraph">Food & Drink</Text>
+                <Text className="paragraph">Alimentação</Text>
               </View>
 
               <Text className="paragraph-semibold text-red-600">-R$ 255,00</Text>
@@ -82,17 +83,21 @@ export default function HomeScreen() {
 
             <View className="flex-row items-center">
               <View className="p-3 border-[1px] border-neutral-200 rounded-2xl mr-3">
-                <Feather name="credit-card" size={24} />
+                <MaterialCommunityIcons name="shopping" size={24} />
               </View>
 
               <View className="mr-auto">
                 <Text className="paragraph-semibold">Template figma</Text>
-                <Text className="paragraph">Online Shop</Text>
+                <Text className="paragraph">Compras pessoais</Text>
               </View>
 
               <Text className="paragraph-semibold text-red-600">-R$ 127,00</Text>
             </View>
           </View>
+        </View>
+
+        <View className="mx-6 mt-6">
+          <Button>Ver todas as transações</Button>
         </View>
       </ScrollView>
     </SafeAreaView>
