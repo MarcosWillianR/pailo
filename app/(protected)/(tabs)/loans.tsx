@@ -3,8 +3,8 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function SettingsScreen() {
   return (
-    <SafeAreaView className="flex-1 justify-center items-center bg-screen">
-      <Text className="text-xl">Settings screen</Text>
+    <SafeAreaView className="flex-1 p-2 justify-center items-center bg-screen">
+      <Text className="title text-center">Empréstimos em {`\n`}construção</Text>
     </SafeAreaView>
   );
 }

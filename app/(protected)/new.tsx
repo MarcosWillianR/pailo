@@ -104,8 +104,8 @@ export default function New() {
         />
 
         <Categories
-          selectedType={type}
           showLabel
+          selectedType={type}
           selectedCategoryId={selectedCategoryId}
           onSelect={(categoryId) => setSelectedCategoryId(categoryId)}
         />

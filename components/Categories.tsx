@@ -22,18 +22,19 @@ interface CategoriesProps {
 
 const CATEGORIES: CategoryItem[] = [
   { id: 1, name: 'Salário', type: 'income' },
-  { id: 2, name: 'Trabalho extra', type: 'income' },
-  { id: 3, name: 'Investimentos', type: 'income' },
-  { id: 4, name: 'Aluguéis recebidos', type: 'income' },
-  { id: 5, name: 'Moradia', type: 'outcome' },
-  { id: 6, name: 'Contas domésticas', type: 'outcome' },
-  { id: 7, name: 'Transporte', type: 'outcome' },
-  { id: 8, name: 'Alimentação', type: 'outcome' },
-  { id: 9, name: 'Assinatura', type: 'outcome' },
-  { id: 10, name: 'Compras pessoais', type: 'outcome' },
-  { id: 11, name: 'Saúde', type: 'outcome' },
-  { id: 12, name: 'Lazer', type: 'outcome' },
-  { id: 13, name: 'Educação', type: 'outcome' },
+  { id: 2, name: 'Aposentadoria', type: 'income' },
+  { id: 3, name: 'Trabalho extra', type: 'income' },
+  { id: 4, name: 'Investimentos', type: 'income' },
+  { id: 5, name: 'Aluguéis recebidos', type: 'income' },
+  { id: 6, name: 'Moradia', type: 'outcome' },
+  { id: 7, name: 'Contas domésticas', type: 'outcome' },
+  { id: 8, name: 'Transporte', type: 'outcome' },
+  { id: 9, name: 'Alimentação', type: 'outcome' },
+  { id: 10, name: 'Assinatura', type: 'outcome' },
+  { id: 11, name: 'Compras pessoais', type: 'outcome' },
+  { id: 12, name: 'Saúde', type: 'outcome' },
+  { id: 13, name: 'Lazer', type: 'outcome' },
+  { id: 14, name: 'Educação', type: 'outcome' },
 ];
 
 export function Categories({ selectedType, showLabel, selectedCategoryId, onSelect }: CategoriesProps) {
